@@ -1,0 +1,55 @@
+<mxfile host="65bd71144e">
+    <diagram id="PeictFzrGkAibM9bBBYD" name="Page-1">
+        <mxGraphModel dx="524" dy="1538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="nombre&amp;nbsp; string:&lt;br&gt;tratamientos:listaTratamiento" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="-1020" width="320" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Paciente()&lt;br&gt;Paciente(nombre: string , tratamientos:listaTratamiento" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="2">
+                    <mxGeometry y="30" width="320" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Paciente&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="-1040" width="315" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="tipo:string&lt;br&gt;fechaInicio: date&lt;br&gt;fechaFin:date" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="227.5" y="-890" width="342.5" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Tratamiento()&lt;br&gt;Tratamiento(string:string, fechaInicio:date, fechaFin:date&lt;br&gt;actualizarFechaFin(fechaFin:date):void" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="16">
+                    <mxGeometry y="60" width="342.5" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Tratamiento" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="227.5" y="-920" width="342.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="nombre&amp;nbsp; string:&lt;br&gt;tratamientos:listaCita" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="-500" width="390" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Recepcionista()&lt;br&gt;Recepcionista(nombre:string, citas;listaCita)&lt;br&gt;agendarCita(paciente:Paciente, fecha: fate, hora:time):void&lt;br&gt;cancelarCita(cita:Cita):void&lt;br&gt;reprogamarCita(cita:Cita, fecha:date,hora:time):void" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="20">
+                    <mxGeometry y="30" width="390" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="paciente: Paciente&amp;nbsp;&lt;br&gt;fecha: date&lt;br&gt;hora: time" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="208.75" y="-680" width="380" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Cita()&lt;br&gt;Cita(paciente :Paciente , fecha: date, hora:time)&lt;br&gt;reprogramarCita(fecha:date, hora:time):void&lt;br&gt;cancelarCita():void" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="22">
+                    <mxGeometry y="50" width="380" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Cita" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="207.5" y="-700" width="380" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Recepcionista" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="-520" width="390" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="nombre:string&lt;br&gt;pacientes:ListaPaciente&amp;nbsp;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="207.5" y="-320" width="385" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="Denstista()&lt;br&gt;Dentista(nombre:string, pacientes:listaPaciente&lt;br&gt;agregarTratamiento(paciente:Paciente, tratamiento:Tratamiento):void&lt;br&gt;eliminarTratamiento(paciente:Paciente, tratamieto:Tratamiento):void&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="29">
+                    <mxGeometry y="50" width="385" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="-350" width="380" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
