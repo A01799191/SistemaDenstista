@@ -1,23 +1,17 @@
-/**
- * Nombre. Rodrigo Castillo Francisco
- * Matricula: A01799191
- * Proyecto : Sistema dentista
- *
- */
-
-#include <iostream>
-using namespace std;
 #include "Paciente.h"
 
-Paciente:: Paciente()
+Paciente::Paciente()
 {
-    nombre = "Rodrigo";
-    tratamiento = "Extraccion de muela de juicio";
+    nombre = "Pepe";
 
 }
-Paciente:: Paciente(string nombre , string tratamiento)
+
+void Paciente::setNombrePaciente(string nuevoNombre)
 {
-    this->nombre = nombre;
-    this->tratamiento = tratamiento;
+    this-> nombre = nuevoNombre;
 }
 
+void Paciente:: imprimirNombre()
+{
+    cout<<"El nombre del paciente es "<< nombre<< endl;
+}

@@ -1,35 +1,27 @@
+/**
+ * Proyecto Final : Sistema Dentista
+ * Nombre : Rodrigo Castillo Francisco
+ * Matricula : A01799191
+ * Profesor : Roberto Martinez Roman
+ * Fecha de creación : Jueves 13 de Junio del 2024
+ */
+
 #include <iostream>
+#include <string>
+#include <vector>
 using namespace std;
+// #include 
 
 class Paciente
 {
-    private:
+private:
     string nombre;
-    string tratamiento;
+    // vector<Cita>citas;
+    // Tratamiento tratamiento
 
-    public:
+public:
     Paciente();
-    Paciente(string nombre, string tratamiento);
-
-    string getNombre()
-    {
-        return nombre;
-    }
-
-    void setNombre(string nombre)
-    {
-        this->nombre=nombre;
-
-    }
-
-    string getTratamiiento()
-    {
-        return tratamiento;
-
-    }
-    void setTratamiento(string tratamiento)
-    {
-        this-> tratamiento = tratamiento;
-    }
-
+    string getNombrePaaciente();
+    void setNombrePaciente(string nuevoNombre);
+    void imprimirNombre();
 };
