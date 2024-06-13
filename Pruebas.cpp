@@ -1,7 +1,7 @@
 
 #include <iostream>
 using namespace std;
-#include <Paciente.h>
+#include "Paciente.h"
 
 int main(int argc, char const *argv[])
 {   

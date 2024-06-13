@@ -1,4 +1,7 @@
+
+#include <iostream>
 #include "Paciente.h"
+using namespace std;
 
 Paciente::Paciente()
 {
@@ -13,5 +16,5 @@ void Paciente::setNombrePaciente(string nuevoNombre)
 
 void Paciente:: imprimirNombre()
 {
-    cout<<"El nombre del paciente es "<< nombre<< endl;
+    cout<<"El nombre del paciente es "<< nombre << endl;
 }
