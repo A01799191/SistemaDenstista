@@ -14,7 +14,7 @@ private:
 public:
     string getDescripcion();
     void setDescripcion(string nuevaDescripcion);
-    Fecha getFechaIninico();
+    Fecha getFechaInicio();
     void setFechaInicio(Fecha nuevaFechaInicio);
     Fecha getFechaFin();
     void setFechaFin(Fecha nuevaFechaFin);

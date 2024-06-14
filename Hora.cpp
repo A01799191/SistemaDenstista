@@ -17,5 +17,5 @@ int Hora::getMinuto()
 
 void Hora::setMinuto(int nuevoMinuto)
 {
-    minuto= nuevoMinuto;
+    minuto = nuevoMinuto;
 }
