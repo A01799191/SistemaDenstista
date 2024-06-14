@@ -10,8 +10,42 @@
 using namespace std ; 
 #include "Cita.h"
 
-int main(int argc, char const *argv[])
+Fecha Cita::getFecha()
 {
-    
-    return 0;
+    return fecha;
+}
+
+void Cita::setFecha(Fecha nuevaFecha)
+{
+    fecha = nuevaFecha;
+}
+
+Hora Cita::getHora()
+{
+    return hora;
+}
+
+void Cita::setHora(Hora nuevaHora)
+{
+    hora = nuevaHora;
+}
+
+Paciente Cita::getPaciente()
+{
+    return paciente;
+}
+
+void Cita::setPaciente(Paciente nuevoPaciente)
+{
+    paciente= nuevoPaciente;
+}
+
+Dentista Cita::getDentista()
+{
+    return dentista;
+}
+
+void Cita::setDenstista(Dentista nuevoDentista)
+{
+    dentista = nuevoDentista;
 }

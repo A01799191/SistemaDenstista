@@ -6,8 +6,9 @@ using namespace std;
 class Dentista
 {
     private:
+    
 
     public:
-    
+
 
 };

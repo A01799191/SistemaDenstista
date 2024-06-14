@@ -22,6 +22,7 @@ class Cita
     Fecha fecha;
     Hora hora;
     Paciente paciente;
+    Dentista dentista;
 
 
     public:
