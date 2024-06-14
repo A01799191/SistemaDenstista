@@ -27,7 +27,7 @@ private:
 
 public:
     Paciente();
-    string getNombrePaaciente();
+    string getNombrePaciente();
     void setNombrePaciente(string nuevoNombre);
     void anadirCita(Cita nuevaCita);
     void removerCita(Cita cita);

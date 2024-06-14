@@ -12,6 +12,7 @@
 #include <iostream> 
 using namespace std;
 #include "Paciente.h"
+#include "Fecha.h"
 
 class Dentista
 {
@@ -21,6 +22,8 @@ class Dentista
     public:
     Paciente nombrePaciente();
     void setNombrePaciente();
+    Fecha getFecha();
+    void setFecha(Fecha nuevaFecha);
 
 
 

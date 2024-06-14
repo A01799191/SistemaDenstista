@@ -5,9 +5,6 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {   
-    Paciente paciente;
-    paciente.setNombrePaciente("Juan");
-    
 
     return 0;
 }
