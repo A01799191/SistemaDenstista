@@ -1,17 +1,11 @@
 
-
-
-
-
-
 class Fecha
 {
-    private: 
+private:
     int dia;
     int mes;
     int anio;
-    public:
+
+public:
     int getDia();
-
-
 };
