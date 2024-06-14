@@ -1,6 +1,8 @@
 
 #include <iostream>
 using namespace std;
+#ifndef TRATAMIENTO_H
+#define TRATAMIENTO_H
 #include <string>
 #include "Fecha.h"
 
@@ -23,5 +25,6 @@ public:
 
     
 };
+#endif
 
 

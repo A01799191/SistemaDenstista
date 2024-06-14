@@ -17,7 +17,6 @@ using namespace std;
 #include "Cita.h"
 #include "Tratamiento.h"
 
-
 class Paciente
 {
 private:

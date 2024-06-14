@@ -1,15 +1,44 @@
 
 #include <iostream>
 #include "Paciente.h"
+#include "Tratamiento.h"
+#include "Cita.h"
 using namespace std;
+#include <vector>
+
 
 Paciente::Paciente()
 {
-    nombre = "Pepe";
+    
+}
 
+string Paciente::getNombrePaciente()
+{
+    return nombre;
+    
 }
 
 void Paciente::setNombrePaciente(string nuevoNombre)
 {
-    this-> nombre = nuevoNombre;
+    nombre = nuevoNombre;
+}
+
+void Paciente::anadirCita(Cita nuevaCita)
+{
+    citas.push_back(nuevaCita);
+}
+
+void Paciente::removerCita(Cita cita)
+{
+      
+}
+
+Tratamiento Paciente::getTratamiento()
+{
+    return tratamiento;
+}
+
+void Paciente::setTratamiento(Tratamiento nuevoTratamiento)
+{
+    tratamiento = nuevoTratamiento;
 }
