@@ -1,11 +1,32 @@
+#include "Fecha.h"
 
-class Fecha
+int Fecha::getDia()
 {
-private:
-    int dia;
-    int mes;
-    int anio;
+    return dia;
+}
 
-public:
-    int getDia();
-};
+void Fecha::setDia(int nuevoDia)
+{
+    dia = nuevoDia;
+}
+
+int Fecha::getMes()
+{
+    return mes;
+}
+
+void Fecha::setMes(int nuevoMes)
+{
+    mes = nuevoMes;
+}
+
+
+int Fecha::getAnio()
+{
+    return anio;
+}
+
+void Fecha::setAnio(int nuevoAnio)
+{
+    anio = nuevoAnio;
+}
