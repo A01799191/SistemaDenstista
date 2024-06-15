@@ -18,6 +18,7 @@ void Dentista::setNombreDentista(string nuevoNombre)
 
 void Dentista::realizarTratamiento(Tratamiento tratamiento)
 {
+    tratamiento.setEstado("En progreso");
 }
 
 void Dentista::asignarCita(Cita cita)
@@ -27,7 +28,18 @@ void Dentista::asignarCita(Cita cita)
 
 vector<Nota> Dentista::consultarHistorial(Paciente paciente)
 {
+        vector<Nota>historial;
+
+    for (Nota nota : notas)
+    {
+        if (nota.getPaciente() == paciente)
+        {
+            historial.push_back(nota);
+        }
+    }
+    return historial;
 }
+
 
 void Dentista::actualizarHistorial(Paciente paciente, Nota nuevasNotas)
 {

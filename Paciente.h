@@ -23,6 +23,7 @@ private:
     string nombre;
     vector<Cita>citas;
     Tratamiento tratamiento;
+    vector<Nota>historial;
 
 public:
     Paciente();
