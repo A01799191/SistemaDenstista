@@ -33,6 +33,10 @@ public:
     void removerCita(Cita cita);
     Tratamiento getTratamiento();
     void setTratamiento(Tratamiento nuevoTratamiento);
+    bool operator==(const Paciente& otroPaciente)const
+    {
+        return this->nombre ==otroPaciente.nombre;
+    }
 
 };
 
