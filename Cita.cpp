@@ -7,7 +7,7 @@
  */
 
 #include <iostream>
-using namespace std ; 
+using namespace std;
 #include "Cita.h"
 
 Fecha Cita::getFecha()
@@ -37,7 +37,7 @@ Paciente Cita::getPaciente()
 
 void Cita::setPaciente(Paciente nuevoPaciente)
 {
-    paciente= nuevoPaciente;
+    paciente = nuevoPaciente;
 }
 
 Dentista Cita::getDentista()
@@ -45,7 +45,7 @@ Dentista Cita::getDentista()
     return dentista;
 }
 
-void Cita::setDenstista(Dentista nuevoDentista)
+void Cita::setDentista(Dentista nuevoDentista)
 {
     dentista = nuevoDentista;
 }

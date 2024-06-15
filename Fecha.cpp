@@ -20,7 +20,6 @@ void Fecha::setMes(int nuevoMes)
     mes = nuevoMes;
 }
 
-
 int Fecha::getAnio()
 {
     return anio;

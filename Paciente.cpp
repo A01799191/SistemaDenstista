@@ -6,16 +6,13 @@
 using namespace std;
 #include <vector>
 
-
 Paciente::Paciente()
 {
-    
 }
 
 string Paciente::getNombrePaciente()
 {
     return nombre;
-    
 }
 
 void Paciente::setNombrePaciente(string nuevoNombre)
@@ -26,11 +23,6 @@ void Paciente::setNombrePaciente(string nuevoNombre)
 void Paciente::anadirCita(Cita nuevaCita)
 {
     citas.push_back(nuevaCita);
-}
-
-void Paciente::removerCita(Cita cita)
-{
-      
 }
 
 Tratamiento Paciente::getTratamiento()

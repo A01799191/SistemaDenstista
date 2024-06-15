@@ -33,7 +33,7 @@ class Cita
     Paciente getPaciente();
     void setPaciente(Paciente nuevoPaciente);
     Dentista getDentista();
-    void setDenstista(Dentista nuevoDentista);
+    void setDentista(Dentista nuevoDentista);
 
 
 };

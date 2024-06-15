@@ -1,3 +1,6 @@
+#ifndef HORA_H
+#define HORA_H
+
 class Hora
 {
     private:
@@ -11,3 +14,4 @@ class Hora
     void setMinuto(int nuevoMinuto);
 
 };
+#endif

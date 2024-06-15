@@ -13,13 +13,11 @@ string Dentista::getNombreDentista()
 
 void Dentista::setNombreDentista(string nuevoNombre)
 {
-    nombreDentista= nuevoNombre;
+    nombreDentista = nuevoNombre;
 }
 
 void Dentista::realizarTratamiento(Tratamiento tratamiento)
 {
-
-
 }
 
 void Dentista::asignarCita(Cita cita)
@@ -29,7 +27,6 @@ void Dentista::asignarCita(Cita cita)
 
 vector<Nota> Dentista::consultarHistorial(Paciente paciente)
 {
-
 }
 
 void Dentista::actualizarHistorial(Paciente paciente, Nota nuevasNotas)
