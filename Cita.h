@@ -26,6 +26,7 @@ class Cita
 
 
     public:
+    Cita();
     Fecha getFecha();
     void setFecha(Fecha nuevaFecha);
     Hora getHora();

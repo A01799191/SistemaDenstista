@@ -3,6 +3,20 @@ using namespace std;
 #include "Fecha.h"
 #include "Tratamiento.h"
 
+Tratamiento::Tratamiento()
+{
+    descripcion = "";
+}
+
+Tratamiento::Tratamiento(string descripcion , Fecha FechaInicio, Fecha fechaFin)
+{
+    descripcion = descripcion;
+    fechaInicio= fechaInicio;
+    fechaFin = fechaFin;
+    
+
+}
+
 string Tratamiento::getDescripcion()
 {
     return descripcion;

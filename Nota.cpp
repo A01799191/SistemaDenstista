@@ -5,8 +5,8 @@ using namespace std;
 
 Nota::Nota()
 {
-}
 
+}
 string Nota::getContenido()
 {
     return contenido;

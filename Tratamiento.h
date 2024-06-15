@@ -14,6 +14,8 @@ private:
     Fecha fechaFin;
     string estado;
 public:
+    Tratamiento();
+    Tratamiento(string tipo, Fecha inicio, Fecha fin);
     string getDescripcion();
     void setDescripcion(string nuevaDescripcion);
     Fecha getFechaInicio();

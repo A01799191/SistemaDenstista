@@ -9,6 +9,8 @@ class Fecha
     int mes;
     int anio;
     public:
+    Fecha();
+    Fecha (int d, int m , int a );
     int getDia();
     void setDia(int nuevoDia);
     int getMes();

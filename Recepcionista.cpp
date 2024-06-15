@@ -27,6 +27,7 @@ void Recepcionista::agendarCita(Fecha fecha, Hora hora, Paciente paciente, Denti
 
 void Recepcionista::registarPaciente(Paciente paciente)
 {
+    paciente.push_back(paciente);
 }
 
 vector<Cita> Recepcionista::buscarCitasDisponibles()
