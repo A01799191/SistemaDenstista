@@ -51,3 +51,11 @@ void Cita::setDentista(Dentista nuevoDentista)
 {
     dentista = nuevoDentista;
 }
+
+bool Cita::operator==(const Cita otra) const
+{
+    return (fechaCita == otra.fechaCita &&
+            horaCita == otra.horaCita &&
+            paciente == otra.paciente &&
+            dentista == otra.dentista);
+}

@@ -2,52 +2,47 @@
 
 Recepcionista::Recepcionista()
 {
+    nombreRecepcionista = "Recepcionista de turno";
 }
 
-string Recepcionista::getNombreRecepcinista()
+Recepcionista::Recepcionista(string nombre)
 {
-    return nombreRecepcionista;
+    nombreRecepcionista = nombre;
 }
 
 void Recepcionista::setNombreRecepcionista(string nuevoNombre)
 {
     nombreRecepcionista = nuevoNombre;
-}
+};
 
-void Recepcionista::agendarCita(Fecha fecha, Hora hora, Paciente paciente, Dentista dentista)
+void Recepcionista::agendarCita(Fecha fechaCita, string horaCita, Paciente paciente, Dentista dentista)
 {
-    Cita nuevaCita;
-    nuevaCita.setFecha(fecha);
-    nuevaCita.setHora(hora);
-    nuevaCita.setPaciente(paciente);
-    nuevaCita.setDentista(dentista);
+    Cita nuevaCita(fechaCita,horaCita, paciente,dentista);
 
     citas.push_back(nuevaCita);
-}
+    
+    paciente.agregarCita(nuevaCita);
 
-void Recepcionista::registarPaciente(Paciente paciente)
-{
-    paciente.push_back(paciente);
-}
+    dentista.agregarCita(nuevaCita);
 
-vector<Cita> Recepcionista::buscarCitasDisponibles()
-{
-    vector<Cita> citasDisponibles;
-
-    for (Cita cita : citas)
-    {
-        if (cita.getPaciente().getNombrePaciente() == "")
-        {
-            citasDisponibles.push_back(cita);
-        }
-    }
-    return citasDisponibles;
 }
 
 void Recepcionista::cancelarCita(Cita cita)
 {
+    for (auto it = citas.begin();it != citas.end(); ++it)
+    {
+        if(*it == cita)
+        {
+            citas.erase(it);
+            break;
+        }
+    }
 }
 
-void Recepcionista::cambiarCita(Cita cita, Fecha nuevaFecha, Hora nuevaHora)
+void Recepcionista::cambiarCita(Cita cita, Fecha nuevaFecha, string nuevaHora)
+{
+}
+
+void Recepcionista::mostrarCitas()
 {
 }

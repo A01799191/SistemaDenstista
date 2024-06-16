@@ -35,6 +35,7 @@ class Cita
     void setPaciente(Paciente nuevoPaciente);
     Dentista getDentista();
     void setDentista(Dentista nuevoDentista);
+    bool operator==(const Cita otra) const;
 
 
 };

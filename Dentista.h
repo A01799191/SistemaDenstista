@@ -23,5 +23,6 @@ public:
     void setNombre(string nuevoNombre);
     void realizarTratamiento(Paciente paciente , Tratamiento tratamiento);
     void registrarNota(Paciente paciente, Nota nota);
+    void agregarCita(Cita nuevaCita);
 };
 #endif

@@ -2,11 +2,11 @@
 #define RECEPCIONISTA_H
 
 #include <iostream>
-#include<string>
 #include <vector>
 #include "Cita.h"
+#include "Paciente.h"
+#include "Dentista.h"
 
-using namespace std;
 
 class Recepcionista
 {
@@ -17,13 +17,13 @@ class Recepcionista
 
     public:
     Recepcionista();
-    string getNombreRecepcinista();
+    Recepcionista(string nombre);
     void setNombreRecepcionista(string nuevoNombre);
-    void agendarCita(Fecha fecha , Hora hora, Paciente paciente, Dentista dentista);
-    void registarPaciente(Paciente paciente);
-    vector<Cita>buscarCitasDisponibles();
+    void agendarCita(Fecha fechaCita , string horaCita , Paciente paciente, Dentista dentista);
     void cancelarCita(Cita cita);
-    void cambiarCita(Cita cita, Fecha nuevaFecha, Hora nuevaHora);
+    void cambiarCita(Cita cita, Fecha nuevaFecha, string nuevaHora);
+    void mostrarCitas();
+
 
 };
 #endif
