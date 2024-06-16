@@ -25,6 +25,8 @@ public:
     string getEstado();
     void setEstado(string nuevoEstado);
     string getPaciente();
+    bool operator==(const Tratamiento otro) const;
+
 
 
     

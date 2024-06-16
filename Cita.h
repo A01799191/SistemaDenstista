@@ -27,13 +27,13 @@ class Cita
     public:
     Cita();
     Cita(Fecha fechaCita,string horaCita, Paciente paciente, Dentista dentista);
-    Fecha getFechaCita();
+    Fecha getFechaCita() const;
     void setFechaCita(Fecha nuevaFechaCita);
-    string getHoraCita();
+    string getHoraCita() const;
     void setHoraCita(string nuevaHoraCita);
-    Paciente getPaciente();
+    Paciente getPaciente() const;
     void setPaciente(Paciente nuevoPaciente);
-    Dentista getDentista();
+    Dentista getDentista() const;
     void setDentista(Dentista nuevoDentista);
     bool operator==(const Cita otra) const;
 

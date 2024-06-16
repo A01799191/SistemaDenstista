@@ -41,8 +41,29 @@ void Recepcionista::cancelarCita(Cita cita)
 
 void Recepcionista::cambiarCita(Cita cita, Fecha nuevaFecha, string nuevaHora)
 {
+    for (auto c: citas)
+    {
+        if(c==cita)
+        {
+            c.setFechaCita(nuevaFecha);
+            c.setHoraCita(nuevaHora);
+            cout<< "La cita ha sido cambiada correctamente. "<< endl;
+            return;
+        }
+    }
+    cout<<"La cita no existe. No se pudo modificar. "<<endl;
 }
 
 void Recepcionista::mostrarCitas()
+{ for (const auto& c :citas)
 {
+    Fecha fecha = c.getFechaCita();
+    string hora = c.getHoraCita();
+    Paciente paciente = c.getPaciente();
+    Dentista dentista = c.getDentista();
+
+    cout<<"Fecha : "<< fecha.toString()<<", Hora: "<<hora<<endl;
+    cout<<"Paciente : <<paciente.getNombre()"<<", Denstita : "<<dentista.getNombre()<<endl;
+
+} 
 }

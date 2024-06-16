@@ -24,5 +24,6 @@ public:
     void realizarTratamiento(Paciente paciente , Tratamiento tratamiento);
     void registrarNota(Paciente paciente, Nota nota);
     void agregarCita(Cita nuevaCita);
+    bool operator==(const Dentista otro)const;
 };
 #endif

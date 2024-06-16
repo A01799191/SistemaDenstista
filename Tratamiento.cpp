@@ -63,3 +63,8 @@ string Tratamiento::getPaciente()
 {
     return string();
 }
+
+bool Tratamiento::operator==(const Tratamiento otro) const
+{
+    return (descripcion == otro.descripcion && fechaInicio == otro.fechaInicio && fechaFin == otro.fechaFin && estado == otro. estado);
+}

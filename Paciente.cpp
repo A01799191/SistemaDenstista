@@ -50,3 +50,7 @@ void Paciente::setTratamiento(Tratamiento nuevoTratamiento)
     tratamiento = nuevoTratamiento;
 }
 
+bool Paciente::operator==(const Paciente otro) const
+{
+    return (nombre == otro.nombre && telefono == otro.telefono && citas == otro.citas && tratamiento == otro.tratamiento);
+}

@@ -12,7 +12,7 @@ Cita::Cita(Fecha fechaCita, string horaCita, Paciente paciente, Dentista dentist
     this->dentista = dentista;
 }
 
-Fecha Cita::getFechaCita()
+Fecha Cita::getFechaCita()const
 {
     return fechaCita;
 }
@@ -22,7 +22,7 @@ void Cita::setFechaCita(Fecha nuevaFechaCita)
     fechaCita = nuevaFechaCita;
 }
 
-string Cita::getHoraCita()
+string Cita::getHoraCita()const
 {
     return horaCita;
 }
@@ -32,7 +32,7 @@ void Cita::setHoraCita(string nuevaHoraCita)
     horaCita = nuevaHoraCita;
 }
 
-Paciente Cita::getPaciente()
+Paciente Cita::getPaciente()const
 {
     return paciente;
 }
@@ -42,7 +42,7 @@ void Cita::setPaciente(Paciente nuevoPaciente)
     paciente = nuevoPaciente;
 }
 
-Dentista Cita::getDentista()
+Dentista Cita::getDentista()const
 {
     return dentista;
 }

@@ -35,3 +35,8 @@ void Dentista::agregarCita(Cita nuevaCita)
 {
     citas.push_back(nuevaCita);
 }
+
+bool Dentista::operator==(const Dentista otro) const
+{
+    return (nombre == otro.nombre && citas == otro.citas && notas== otro.notas);
+}

@@ -34,6 +34,8 @@ public:
     void cancelarCita(Cita cita);
     Tratamiento getTratamiento();
     void setTratamiento(Tratamiento nuevoTratamiento);
+    bool operator==(const Paciente otro) const;
+
 
 
 };
