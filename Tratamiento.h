@@ -13,9 +13,10 @@ private:
     Fecha fechaInicio;
     Fecha fechaFin;
     string estado;
+    string paciente;
 public:
     Tratamiento();
-    Tratamiento(string descripcion, Fecha fechaInicio , Fecha fechaFin, string estado);
+    Tratamiento(string descripcion, Fecha fechaInicio , Fecha fechaFin, string estado, string paciente);
     string getDescripcion();
     void setDescripcion(string nuevaDescripcion);
     Fecha getFechaInicio();

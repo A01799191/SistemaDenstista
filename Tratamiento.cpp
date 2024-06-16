@@ -8,12 +8,13 @@ Tratamiento::Tratamiento()
     descripcion = "";
 }
 
-Tratamiento::Tratamiento(string descripcion , Fecha FechaInicio, Fecha fechaFin, string estado)
+Tratamiento::Tratamiento(string descripcion , Fecha FechaInicio, Fecha fechaFin, string estado, string paciente)
 {
-    descripcion = descripcion;
-    fechaInicio= fechaInicio;
-    fechaFin = fechaFin;
-    estado=estado;
+    this-> descripcion = descripcion;
+    this->fechaInicio= fechaInicio;
+    this->fechaFin = fechaFin;
+    this->estado=estado;
+    this-> paciente = paciente;
     
 
 }
@@ -61,7 +62,7 @@ void Tratamiento::setEstado(string nuevoEstado)
 
 string Tratamiento::getPaciente()
 {
-    return string();
+    return paciente;
 }
 
 bool Tratamiento::operator==(const Tratamiento otro) const
