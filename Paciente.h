@@ -9,34 +9,32 @@
 #ifndef PACIENTE_H
 #define PACIENTE_H
 
-
-#include <iostream>
 #include <string>
 #include <vector>
-using namespace std;
 #include "Cita.h"
 #include "Tratamiento.h"
+
 
 class Paciente
 {
 private:
     string nombre;
-    vector<Cita>citas;
+    string telefono;
+    vector<Cita> citas;
     Tratamiento tratamiento;
-    vector<Nota>historial;
 
 public:
     Paciente();
-    string getNombrePaciente();
-    void setNombrePaciente(string nuevoNombre);
-    void anadirCita(Cita nuevaCita);
-    void removerCita(Cita cita);
+    Paciente(string nombre , string telefono);
+    string getNombre();
+    void setNombre(string nuevoNombre);
+    string getTelefono();
+    void setTelefono(string nuevoTelefono);
+    void agregarCita(Cita nuevaCita);
+    void cancelarCita(Cita cita);
     Tratamiento getTratamiento();
     void setTratamiento(Tratamiento nuevoTratamiento);
-    bool operator==(const Paciente& otroPaciente)const
-    {
-        return this->nombre ==otroPaciente.nombre;
-    }
+
 
 };
 

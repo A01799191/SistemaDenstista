@@ -1,28 +1,43 @@
-
-#include <iostream>
 #include "Paciente.h"
-#include "Tratamiento.h"
-#include "Cita.h"
-using namespace std;
-#include <vector>
 
 Paciente::Paciente()
 {
 }
 
-string Paciente::getNombrePaciente()
+Paciente::Paciente(string nombre, string telefono)
+{
+    this->nombre = nombre;
+    this->telefono = telefono;
+}
+
+string Paciente::getNombre()
 {
     return nombre;
 }
 
-void Paciente::setNombrePaciente(string nuevoNombre)
+void Paciente::setNombre(string nuevoNombre)
 {
     nombre = nuevoNombre;
 }
 
-void Paciente::anadirCita(Cita nuevaCita)
+string Paciente::getTelefono()
+{
+    return telefono;
+}
+
+void Paciente::setTelefono(string nuevoTelefono)
+{
+    telefono = nuevoTelefono;
+}
+
+void Paciente::agregarCita(Cita nuevaCita)
 {
     citas.push_back(nuevaCita);
+}
+
+void Paciente::cancelarCita(Cita cita)
+{
+
 }
 
 Tratamiento Paciente::getTratamiento()
@@ -34,3 +49,4 @@ void Paciente::setTratamiento(Tratamiento nuevoTratamiento)
 {
     tratamiento = nuevoTratamiento;
 }
+

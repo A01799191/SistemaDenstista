@@ -13,24 +13,24 @@
 using namespace std;
 #include "Paciente.h"
 #include "Fecha.h"
-#include "Hora.h"
 #include "Dentista.h"
 
 class Cita
 {
     private:
-    Fecha fecha;
-    Hora hora;
+    Fecha fechaCita;
+    string horaCita;
     Paciente paciente;
     Dentista dentista;
 
 
     public:
     Cita();
-    Fecha getFecha();
-    void setFecha(Fecha nuevaFecha);
-    Hora getHora();
-    void setHora(Hora nuevaHora);
+    Cita(Fecha fechaCita,string horaCita, Paciente paciente, Dentista dentista);
+    Fecha getFechaCita();
+    void setFechaCita(Fecha nuevaFechaCita);
+    string getHoraCita();
+    void setHoraCita(string nuevaHoraCita);
     Paciente getPaciente();
     void setPaciente(Paciente nuevoPaciente);
     Dentista getDentista();

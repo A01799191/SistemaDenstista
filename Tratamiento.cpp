@@ -8,11 +8,12 @@ Tratamiento::Tratamiento()
     descripcion = "";
 }
 
-Tratamiento::Tratamiento(string descripcion , Fecha FechaInicio, Fecha fechaFin)
+Tratamiento::Tratamiento(string descripcion , Fecha FechaInicio, Fecha fechaFin, string estado)
 {
     descripcion = descripcion;
     fechaInicio= fechaInicio;
     fechaFin = fechaFin;
+    estado=estado;
     
 
 }
@@ -56,4 +57,9 @@ string Tratamiento::getEstado()
 void Tratamiento::setEstado(string nuevoEstado)
 {
     estado = nuevoEstado;
+}
+
+string Tratamiento::getPaciente()
+{
+    return string();
 }

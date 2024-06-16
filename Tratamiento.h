@@ -15,7 +15,7 @@ private:
     string estado;
 public:
     Tratamiento();
-    Tratamiento(string tipo, Fecha inicio, Fecha fin);
+    Tratamiento(string descripcion, Fecha fechaInicio , Fecha fechaFin, string estado);
     string getDescripcion();
     void setDescripcion(string nuevaDescripcion);
     Fecha getFechaInicio();
@@ -24,6 +24,8 @@ public:
     void setFechaFin(Fecha nuevaFechaFin);
     string getEstado();
     void setEstado(string nuevoEstado);
+    string getPaciente();
+
 
     
 };

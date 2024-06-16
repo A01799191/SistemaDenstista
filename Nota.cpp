@@ -7,6 +7,11 @@ Nota::Nota()
 {
 
 }
+Nota::Nota(string contenido, Fecha fecha)
+{
+    this->contenido = contenido;
+    this->fecha = fecha;
+}
 string Nota::getContenido()
 {
     return contenido;
@@ -20,19 +25,4 @@ void Nota::setContenido(string nuevoContenido)
 Fecha Nota::getFecha()
 {
     return fecha;
-}
-
-void Nota::setFecha(Fecha nuevaFecha)
-{
-    fecha = nuevaFecha;
-}
-
-Paciente Nota::getPaciente()
-{
-    return paciente;
-}
-
-void Nota::setPaciente(Paciente nuevoPaciente)
-{
-    paciente = nuevoPaciente;
 }

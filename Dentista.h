@@ -17,11 +17,11 @@ private:
     vector<Nota> notas;
 
 public:
-    string getNombreDentista();
-    void setNombreDentista(string nuevoNombre);
+    Dentista();
+    Dentista(string nombre);
+    string getNombre();
+    setNombre(string nuevoNombre);
     void realizarTratamiento(Tratamiento tratamiento);
-    void asignarCita(Cita cita);
-    vector<Nota> consultarHistorial(Paciente paciente);
-    void actualizarHistorial(Paciente paciente, Nota nuevasNotas);
+    void registrarNota(Paciente paciente, Nota nota);
 };
 #endif
