@@ -20,18 +20,18 @@ void Dentista::setNombre(string nuevoNombre)
     nombre = nuevoNombre;
 }
 
-void Dentista::realizarTratamiento(Paciente paciente, Tratamiento tratamiento)
+void Dentista::realizarTratamiento(Paciente* paciente, Tratamiento tratamiento)
 {
-cout<<" Se esta realizando el tratamiento : " <<tratamiento.getDescripcion()<<" para el paciente "<< paciente.getNombre()<<endl;
+cout<<" Se esta realizando el tratamiento : " <<tratamiento.getDescripcion()<<" para el paciente "<< paciente->getNombre()<<endl;
 }
 
-void Dentista::registrarNota(Paciente paciente, Nota nota)
+void Dentista::registrarNota(Paciente* paciente, Nota nota)
 {
     notas.push_back(nota);
 
 }
 
-void Dentista::agregarCita(Cita nuevaCita)
+void Dentista::agregarCita(Cita* nuevaCita)
 {
     citas.push_back(nuevaCita);
 }

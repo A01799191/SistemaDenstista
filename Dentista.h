@@ -5,15 +5,15 @@
 #include <string>
 #include <vector>
 #include "Cita.h"
+#include "Paciente.h"
 #include "Nota.h"
-
-using namespace std;
+#include "Tratamiento.h"
 
 class Dentista
 {
 private:
     string nombre;
-    vector<Cita> citas;
+    vector<Cita*> citas;
     vector<Nota> notas;
 
 public:
@@ -21,9 +21,9 @@ public:
     Dentista(string nombre);
     string getNombre();
     void setNombre(string nuevoNombre);
-    void realizarTratamiento(Paciente paciente , Tratamiento tratamiento);
-    void registrarNota(Paciente paciente, Nota nota);
-    void agregarCita(Cita nuevaCita);
+    void realizarTratamiento(Paciente* paciente , Tratamiento tratamiento);
+    void registrarNota(Paciente* paciente, Nota nota);
+    void agregarCita(Cita* nuevaCita);
     bool operator==(const Dentista otro)const;
 };
 #endif

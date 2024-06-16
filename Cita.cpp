@@ -4,7 +4,7 @@ Cita::Cita()
 {
 }
 
-Cita::Cita(Fecha fechaCita, string horaCita, Paciente paciente, Dentista dentista)
+Cita::Cita(Fecha fechaCita, string horaCita, Paciente* paciente, Dentista* dentista)
 {
     this->fechaCita = fechaCita;
     this->horaCita = horaCita;
@@ -32,22 +32,22 @@ void Cita::setHoraCita(string nuevaHoraCita)
     horaCita = nuevaHoraCita;
 }
 
-Paciente Cita::getPaciente()const
+Paciente* Cita::getPaciente()const
 {
     return paciente;
 }
 
-void Cita::setPaciente(Paciente nuevoPaciente)
+void Cita::setPaciente(Paciente* nuevoPaciente)
 {
     paciente = nuevoPaciente;
 }
 
-Dentista Cita::getDentista()const
+Dentista* Cita::getDentista()const
 {
     return dentista;
 }
 
-void Cita::setDentista(Dentista nuevoDentista)
+void Cita::setDentista(Dentista* nuevoDentista)
 {
     dentista = nuevoDentista;
 }

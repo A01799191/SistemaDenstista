@@ -13,14 +13,15 @@
 #include <vector>
 #include "Cita.h"
 #include "Tratamiento.h"
-
+class Cita;
+using namespace std;
 
 class Paciente
 {
 private:
     string nombre;
     string telefono;
-    vector<Cita> citas;
+    vector<Cita*> citas;
     Tratamiento tratamiento;
 
 public:
@@ -30,8 +31,8 @@ public:
     void setNombre(string nuevoNombre);
     string getTelefono();
     void setTelefono(string nuevoTelefono);
-    void agregarCita(Cita nuevaCita);
-    void cancelarCita(Cita cita);
+    void agregarCita(Cita* nuevaCita);
+    void cancelarCita(Cita* cita);
     Tratamiento getTratamiento();
     void setTratamiento(Tratamiento nuevoTratamiento);
     bool operator==(const Paciente otro) const;

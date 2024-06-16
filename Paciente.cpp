@@ -30,12 +30,12 @@ void Paciente::setTelefono(string nuevoTelefono)
     telefono = nuevoTelefono;
 }
 
-void Paciente::agregarCita(Cita nuevaCita)
+void Paciente::agregarCita(Cita* nuevaCita)
 {
     citas.push_back(nuevaCita);
 }
 
-void Paciente::cancelarCita(Cita cita)
+void Paciente::cancelarCita(Cita* cita)
 {
 
 }

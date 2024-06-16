@@ -11,30 +11,30 @@
 
 #include <iostream> 
 using namespace std;
-#include "Paciente.h"
 #include "Fecha.h"
-#include "Dentista.h"
+class Paciente;
+class Dentista;
 
 class Cita
 {
     private:
     Fecha fechaCita;
     string horaCita;
-    Paciente paciente;
-    Dentista dentista;
+    Paciente* paciente;
+    Dentista* dentista;
 
 
     public:
     Cita();
-    Cita(Fecha fechaCita,string horaCita, Paciente paciente, Dentista dentista);
+    Cita(Fecha fechaCita,string horaCita, Paciente* paciente, Dentista* dentista);
     Fecha getFechaCita() const;
     void setFechaCita(Fecha nuevaFechaCita);
     string getHoraCita() const;
     void setHoraCita(string nuevaHoraCita);
-    Paciente getPaciente() const;
-    void setPaciente(Paciente nuevoPaciente);
-    Dentista getDentista() const;
-    void setDentista(Dentista nuevoDentista);
+    Paciente* getPaciente() const;
+    void setPaciente(Paciente* nuevoPaciente);
+    Dentista* getDentista() const;
+    void setDentista(Dentista* nuevoDentista);
     bool operator==(const Cita otra) const;
 
 

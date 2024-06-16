@@ -12,16 +12,16 @@ class Recepcionista
 {
     private:
     string nombreRecepcionista;
-    vector<Cita>citas;
+    vector<Cita*>citas;
 
 
     public:
     Recepcionista();
     Recepcionista(string nombre);
     void setNombreRecepcionista(string nuevoNombre);
-    void agendarCita(Fecha fechaCita , string horaCita , Paciente paciente, Dentista dentista);
-    void cancelarCita(Cita cita);
-    void cambiarCita(Cita cita, Fecha nuevaFecha, string nuevaHora);
+    void agendarCita(Fecha fechaCita , string horaCita , Paciente* paciente, Dentista* dentista);
+    void cancelarCita(Cita* cita);
+    void cambiarCita(Cita* cita, Fecha nuevaFecha, string nuevaHora);
     void mostrarCitas();
 
 
