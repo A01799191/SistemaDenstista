@@ -2,7 +2,6 @@
 using namespace std;
 #include "Dentista.h"
 
-
 Dentista::Dentista()
 {
 }
@@ -16,12 +15,12 @@ string Dentista::getNombre()
     return nombre;
 }
 
-Dentista::setNombre(string nuevoNombre)
+void Dentista::setNombre(string nuevoNombre)
 {
     nombre = nuevoNombre;
 }
 
-void Dentista::realizarTratamiento(Tratamiento tratamiento)
+void Dentista::realizarTratamiento(Paciente paciente, Tratamiento tratamiento)
 {
 }
 

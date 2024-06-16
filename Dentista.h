@@ -12,7 +12,7 @@ using namespace std;
 class Dentista
 {
 private:
-    string nombreDentista;
+    string nombre;
     vector<Cita> citas;
     vector<Nota> notas;
 
@@ -20,8 +20,8 @@ public:
     Dentista();
     Dentista(string nombre);
     string getNombre();
-    setNombre(string nuevoNombre);
-    void realizarTratamiento(Tratamiento tratamiento);
+    void setNombre(string nuevoNombre);
+    void realizarTratamiento(Paciente paciente , Tratamiento tratamiento);
     void registrarNota(Paciente paciente, Nota nota);
 };
 #endif

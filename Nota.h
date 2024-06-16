@@ -1,7 +1,6 @@
 #ifndef NOTA_H
 #define NOTA_H
 #include <string>
-#include "Paciente.h"
 #include "Fecha.h"
 
 class Nota
